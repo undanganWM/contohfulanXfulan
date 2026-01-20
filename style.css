@@ -27,6 +27,14 @@ justify-content: center;
 background: linear-gradient(180deg, #081a33, #0f2a52);
 }
 
+/*tamu*/
+.tamu {
+  font-style: italic;
+  margin: 10px 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
 .overlay {
 background: rgba(8, 26, 51, 0.8);
 padding: 40px 25px;
