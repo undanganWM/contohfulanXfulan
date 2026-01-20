@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop>
+  <source src="assets/musik.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-control" onclick="toggleMusic()">🎵</div>
+
+<section class="cover">
+  <div class="overlay">
+    <p>Undangan Pernikahan</p>
+    <h1>Andi & Siti</h1>
+    <p id="tamu"></p>
+    <p>Minggu, 20 April 2026</p>
+    <button onclick="bukaUndangan()">Buka Undangan</button>
+  </div>
+</section>
+
+<main id="isi" style="display:none">
+  <section>
+    <h2>Andi & Siti</h2>
+    <p>Dengan memohon rahmat Allah SWT kami mengundang Bapak/Ibu/Saudara/i.</p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
