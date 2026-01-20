@@ -1,7 +1,89 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b1c33;
-  color: white;
-  text-align: center;
+margin: 0;
+font-family: 'Georgia', serif;
+background: #081a33;
+color: white;
+text-align: center;
+}
+
+/* MUSIK */
+.music-control {
+position: fixed;
+top: 15px;
+right: 15px;
+background: #1e3a5f;
+padding: 10px;
+border-radius: 50%;
+cursor: pointer;
+z-index: 99;
+}
+
+/* COVER */
+.cover {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(180deg, #081a33, #0f2a52);
+}
+
+.overlay {
+background: rgba(8, 26, 51, 0.8);
+padding: 40px 25px;
+border-radius: 20px;
+animation: fadeIn 2s;
+}
+
+h1 {
+font-size: 32px;
+margin: 10px 0;
+}
+
+button {
+margin-top: 20px;
+padding: 12px 30px;
+border-radius: 30px;
+border: none;
+font-size: 16px;
+cursor: pointer;
+}
+
+/* ISI */
+#isi {
+display: none;
+}
+
+section {
+padding: 60px 20px;
+}
+
+.profil img {
+width: 180px;
+border-radius: 50%;
+border: 5px solid #2a4f80;
+margin-bottom: 15px;
+}
+
+/* ANIMASI */
+.fade {
+opacity: 0;
+transform: translateY(30px);
+transition: 1s;
+}
+
+.fade.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+h1 {
+font-size: 26px;
+}
 }
