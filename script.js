@@ -35,3 +35,12 @@ el.classList.add("show");
 }
 });
 });
+
+/* NAMA TAMU DARI URL */
+const params = new URLSearchParams(window.location.search);
+const namaTamu = params.get("to");
+
+if (namaTamu) {
+const tamuEl = document.getElementById("tamu");
+tamuEl.innerText = "Kepada Yth. " + namaTamu;
+}
