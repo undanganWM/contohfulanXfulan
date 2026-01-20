@@ -1,21 +1,36 @@
 const music = document.getElementById("music");
 
 function bukaUndangan() {
+// hilangkan cover
 document.querySelector(".cover").style.display = "none";
-document.getElementById("isi").style.display = "block";
+
+// tampilkan isi
+const isi = document.getElementById("isi");
+isi.style.display = "block";
+
+// PAKSA semua fade tampil (anti blank)
+document.querySelectorAll(".fade").forEach(el => {
+el.classList.add("show");
+});
+
+// play musik
 music.play();
 }
 
 // kontrol musik
 function toggleMusic() {
-music.paused ? music.play() : music.pause();
+if (music.paused) {
+music.play();
+} else {
+music.pause();
+}
 }
 
-// animasi scroll
+// animasi scroll (opsional, tetap halus)
 const faders = document.querySelectorAll(".fade");
 window.addEventListener("scroll", () => {
 faders.forEach(el => {
-if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+if (el.getBoundingClientRect().top < window.innerHeight - 80) {
 el.classList.add("show");
 }
 });
