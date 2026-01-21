@@ -84,6 +84,19 @@ opacity: 1;
 transform: translateY(0);
 }
 
+/* BACKGROUND FLORAL */
+body {
+margin: 0;
+font-family: 'Georgia', serif;
+color: white;
+text-align: center;
+background-color: #081a33;
+background-image: url("assets/floral.png");
+background-repeat: no-repeat;
+background-position: top left, bottom right;
+background-size: 300px;
+}
+
 @keyframes fadeIn {
 from { opacity: 0; }
 to { opacity: 1; }
