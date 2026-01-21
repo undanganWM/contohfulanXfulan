@@ -18,13 +18,13 @@ cursor: pointer;
 z-index: 99;
 }
 
-/* COVER */
 .cover {
+position: relative;
 height: 100vh;
+background: linear-gradient(180deg, #081a33, #0f2a52);
 display: flex;
 align-items: center;
 justify-content: center;
-background: linear-gradient(180deg, #081a33, #0f2a52);
 }
 
 /*tamu*/
@@ -108,3 +108,22 @@ h1 {
 font-size: 26px;
 }
 }
+
+.floral {
+position: absolute;
+width: 180px;
+opacity: 0.85;
+}
+
+.floral-atas {
+top: 0;
+left: 0;
+}
+
+.floral-bawah {
+bottom: 0;
+right: 0;
+transform: rotate(180deg);
+}
+
+
