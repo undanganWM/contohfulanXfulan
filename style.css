@@ -126,4 +126,31 @@ right: 0;
 transform: rotate(180deg);
 }
 
+/* FLORAL DEKORASI */
+.floral {
+  position: fixed;
+  width: 220px;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.floral.top {
+  top: 0;
+  left: 0;
+}
+
+.floral.bottom {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+/* KONTEN DI ATAS FLORAL */
+.cover, main {
+  position: relative;
+  z-index: 2;
+}
+
+
 
