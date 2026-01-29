@@ -41,7 +41,9 @@ const params = new URLSearchParams(window.location.search);
 let namaTamu = params.get("to");
 
 if (namaTamu) {
-  namaTamu = namaTamu.replace(/\+/g, " ");
+  namaTamu = decodeURIComponent(namaTamu.replace(/\+/g, " "));
   document.getElementById("tamu").innerText =
     "Kepada Yth. " + namaTamu;
+} else {
+  document.getElementById("tamu").style.display = "none";
 }
