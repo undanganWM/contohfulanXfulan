@@ -9,21 +9,25 @@ body {
   overflow-x: hidden;
 }
 
-body::before {
-  content: "";
+/* FLORAL GLOBAL */
+.floral-bg {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
 
-  background-image: url("floral2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  object-fit: contain;   /* kunci utama */
+  object-position: center;
 
+  opacity: 0.85;
   pointer-events: none;
   z-index: 0;
 }
 
+  opacity: 0.85;
 
+
+/* KONTEN DI ATAS FLORAL */
 .cover,
 main,
 .music-control {
@@ -100,10 +104,4 @@ font-size: 26px;
 }
 }
 
-@media (max-width: 480px) {
-  body::before {
-    background-position: top center;
-    background-size: contain;
-  }
-}
 
