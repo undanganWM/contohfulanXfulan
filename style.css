@@ -9,23 +9,26 @@ body {
   overflow-x: hidden;
 }
 
-/* FLORAL GLOBAL */
-.floral-bg {
+.floral.tl,
+.floral.br {
   position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-
-  object-fit: cover;   /* kunci utama */
-  object-position: center;
-
-  opacity: 0.85;
+  width: 320px;
   pointer-events: none;
   z-index: 0;
 }
+.floral.tl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+}
 
-  opacity: 0.85;
-
+.floral.br {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 320px;
+}
 
 /* KONTEN DI ATAS FLORAL */
 .cover,
@@ -104,4 +107,9 @@ font-size: 26px;
 }
 }
 
-
+@media (max-width: 480px) {
+  .floral.tl,
+  .floral.br {
+    width: 220px;
+  }
+}
