@@ -1,43 +1,40 @@
 body {
   margin: 0;
   font-family: Georgia, serif;
-
-  background:
-    linear-gradient(rgba(8,26,51,0.25), rgba(8,26,51,0.25)),
-    url("floral2.png") center / cover no-repeat;
-
-  min-height: 100vh;
+  background-color: #2f4159;
   color: white;
   text-align: center;
-}
-
-
-/* MUSIK */
-.music-control {
-position: fixed;
-top: 15px;
-right: 15px;
-background: #1e3a5f;
-padding: 10px;
-border-radius: 50%;
-cursor: pointer;
-z-index: 99;
-}
-
-.cover {
+  min-height: 100vh;
   position: relative;
-  height: 100vh;
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-x: hidden;
 }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("floral2.png") no-repeat top left;
+  background-size: 380px auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cover,
+main,
+.music-control {
+  position: relative;
+  z-index: 2;
+}
+
 .overlay {
-  background: rgba(8,26,51,0.55);
+  background: rgba(8, 26, 51, 0.55);
   padding: 40px 25px;
   border-radius: 20px;
+  animation: fadeIn 2s;
 }
-
 
 /*tamu*/
 .tamu {
@@ -45,13 +42,6 @@ z-index: 99;
   margin: 10px 0;
   font-size: 14px;
   opacity: 0.9;
-}
-
-.overlay {
-background: rgba(8, 26, 51, 0.8);
-padding: 40px 25px;
-border-radius: 20px;
-animation: fadeIn 2s;
 }
 
 h1 {
@@ -109,7 +99,9 @@ font-size: 26px;
 }
 
 @media (max-width: 480px) {
-  body {
+  body::before {
     background-position: top center;
+    background-size: 280px auto;
   }
 }
+
