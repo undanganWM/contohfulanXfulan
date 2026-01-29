@@ -1,10 +1,16 @@
 body {
-margin: 0;
-font-family: 'Georgia', serif;
-background: #081a33;
-color: white;
-text-align: center;
+  margin: 0;
+  font-family: Georgia, serif;
+
+  background: 
+    linear-gradient(rgba(8,26,51,0.85), rgba(8,26,51,0.85)),
+    url("floral2.png") center / cover no-repeat;
+
+  min-height: 100vh;
+  color: white;
+  text-align: center;
 }
+
 
 /* MUSIK */
 .music-control {
@@ -94,20 +100,6 @@ to { opacity: 1; }
 h1 {
 font-size: 26px;
 }
-}
-
-/* FLORAL */
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-
-  background: 
-    linear-gradient(rgba(8,26,51,0.85), rgba(8,26,51,0.85)),
-    url("assets/floral.png") center / cover no-repeat;
-
-  min-height: 100vh;
-  color: white;
-  text-align: center;
 }
 
 @media (max-width: 480px) {
