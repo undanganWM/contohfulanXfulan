@@ -16,8 +16,8 @@ body {
   width: 100vw;
   height: 100vh;
 
-  object-fit: contain;   /* kunci utama */
-  object-position: top center;
+  object-fit: cover;   /* kunci utama */
+  object-position: center;
 
   opacity: 0.85;
   pointer-events: none;
